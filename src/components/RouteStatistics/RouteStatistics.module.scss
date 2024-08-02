@@ -1,0 +1,43 @@
+.routeStatistics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  flex-direction: column;
+
+  @media (min-width: 40rem) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & > :not(:last-child) {
+      border-right: 1px solid #dbdbdb;
+    }
+  }
+}
+
+.routeStatisticsItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  @media (min-width: 40rem) {
+    flex-basis: 8.75rem;
+  }
+
+  .routeStatisticsItemValue {
+    font-size: 1.875rem;
+    text-align: center;
+    line-height: 1.16;
+    color: #384045;
+  }
+
+  .routeStatisticsItemTitle {
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1.33;
+    color: #797f82;
+  }
+}

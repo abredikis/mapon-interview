@@ -1,0 +1,62 @@
+.routeReportControls {
+  display: flex;
+  flex-direction: column;
+
+  input[type='date'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    border: 1px solid #dcdee0;
+    background-color: #ffffff;
+    padding: 0.375rem 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.188;
+    color: #384045;
+    font-weight: 400;
+  }
+}
+
+.routeReportUnitSelector,
+.routeReportPeriodSelector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+
+  p {
+    display: flex;
+    font-size: 0.875rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 0.25rem;
+    legend {
+      color: #ff4141;
+    }
+  }
+}
+
+.routeReportPeriodSelector {
+  margin-top: 1rem;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 23.75rem;
+
+    div {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+
+      &:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.routeReportDropdown {
+  flex-grow: 1;
+  max-width: 23.75rem;
+}

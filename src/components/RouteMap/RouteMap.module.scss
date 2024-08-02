@@ -1,0 +1,8 @@
+.map {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  @media (min-width: 40rem) {
+    aspect-ratio: 1 / 0.33;
+  }
+}
